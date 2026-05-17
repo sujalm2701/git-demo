@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Git Demo</h1>
+</body>
+</html>
+
+<!-- There are two imp operations 
+1 clone to copy from global github to remote(local)folder
+we can write *gitclone* then its link(by https)
+
+NOW TO GO TO THE PARTICULAR Folder IN THE FOLDER USE-
+cd (Change directory) directory=floder 
+we use *TAB* to auto complete the name of the folder
+
+To know how many files we have we do
+Get-ChildItem to show all the files in the folder
+and ls -Force to show all the files including hidden files
+
+-->
+
+<!-- 2 status
+write"git status"
+It will show on branch main (if not edited)
+will show *MODIFIED* if content is changed
+will show *UNTRACKED* for any new file
+ -->
+
+
+<!-- after editing your content 
+1 - it will show *MODIFIED* or *UNTRACKED* (for new file)
+2 - After adding it will show it as *STAGED* (which means ready to change)
+for this write git add (name of the file)
+if we want to add all files at once we do git add . (dot means all files)
+
+3 - after commiting it will show *UNCHANGED*
+git commit -m "add its goal"
+4 - now will use push to upload the change from our file to github
+write"Git push origin main">
+
+
