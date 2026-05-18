@@ -88,9 +88,47 @@ we can also do "git push -u origin main"
  another time we can directly write git push and it will push it to the 
  upstream branch i.e-default branch(here main)
 
-to make a new branch we do "git branch (name of the branch)"
+to make a new branch we do "git checkout -b (name of the branch)"
+to move form one branch to another we do "git checkout (name of the branch)"
+
+to delete a branch we do "git branch -d (name of the branch)"
+
+now the code in the feature1 and main are diff and to push the feture1 will noe do
+git push origin feature1
 
 
+
+now there are two ways to merge the code from feature1 to main
+1.using git commands
+2.using github PR(pull request)
+
+Using git commands we do
+step 1. git diff main(it will compare the code diff in main and feature1)
+step 2. git merge (branch name) (here we will finally merge it)
+
+Using github we do
+we create a pull request(PR) it tells the changes we have made or the new features added
+
+in github the PR is created by clicking on the compare and pull request button
+and then we click on create pull request and then we can merge it by clicking on merge pull
+the person who is merging the code can also add some comments about the change and then merge it
+
+now to see the change of the remote repository in our local folder 
+we do "git pull origin main"
+Pull command--it is used to pull the changes from the remote repository to our local folder
+
+MERGE CONFLICTS--when two branches have some changes in the
+ same line of code then it is called merge conflict
+
+ it can we resolved by manually deciding which code to keep and then
+ commit the changes in one and merging the other branch to it.
+
+Undoing Changes
+
+
+
+to check the history of the commits we do "git log"
+it will show the commit history with the name of the author and the date and time of the commit and the commit message
 
 -->
 
