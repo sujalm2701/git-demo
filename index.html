@@ -123,12 +123,29 @@ MERGE CONFLICTS--when two branches have some changes in the
  it can we resolved by manually deciding which code to keep and then
  commit the changes in one and merging the other branch to it.
 
-Undoing Changes
+Undoing Changes--
+when we *added* a change by mistakenly [not commited it yet] then we can do 
+git reset (name of the file)
+or git reset  [to reset all added changes at once]
 
+When we added a changed by mistakenly and also commited(for only 1 commit back) it then we do
+git reset HEAD~1(here HEAD--means the commits) if we write *~1* This means 
+reset the recent commit(HEAD)
 
+for many commits back we do 
+first we copy its hash(it is the code we can get by git log)
+then we write git reset (code)
 
-to check the history of the commits we do "git log"
+To also see the code after our final reset we can do 
+git reset --hard (code) or only  *git reset --hard*
+
+to check the history of the commits we do "git log" command
 it will show the commit history with the name of the author and the date and time of the commit and the commit message
+
+
+Use of "Fork"
+It is used to keep a copy of the repo of someone else
+We can also pull a request after modifing
 
 -->
 
