@@ -14,9 +14,11 @@
 1 clone to copy from global github to remote(local)folder
 we can write *gitclone* then its link(by https)
 
-NOW TO GO TO THE PARTICULAR Folder IN THE FOLDER USE-
+NOW TO GO TO THE PARTICULAR Folder IN THE FOLDER we USE-
 cd (Change directory) directory=floder 
 we use *TAB* to auto complete the name of the folder
+
+to switch to any another(child) folder we do cd .. (two dots means one step back)
 
 To know how many files we have we do
 Get-ChildItem to show all the files in the folder
@@ -46,5 +48,53 @@ but it will not upload the change to github
 
 4 - now will use push to upload the change from our file to github
 write"git push origin main">
+The *origin* here means the main branch of the github or the main folder where all this data is finally saved
+and *main* is the name of the branch in which we are working
+
+init-it is used to create a new repository(repo) in the local folder
+-->
+
+<!-- Making a new folder using terminal we do--
+ mkdir foldername 
+ 
+*Then we do    *git init* to make it a git repository*
+
+(the indication that it is not a git repository can be checked by
+commanding ls -Force if it shows .git then it is a git repository 
+otherwise it is not.)
+
+after doing this we will make a new repo using github
+and then we add it so that this folder wil be shown inside that repo.To do this
+
+git remote add origin (link of the github repo)
+
+here *origin* is the *name* of the remote repository and we can give any name to it
+and remote refers to the the remote github repo which we want to add
+
+we use git "remote -v" to check the remote repository which we have added
+
+brach--in a project there are many teams working together 
+so the works is divided and each team have a copy of the project in the main branch
+they perform their tasks and then upload this in their specific brances
+and then the changes are merged in the main branch
+
+
+to check in which branch we are working we do "git branch"
+it will first show as *master* but now master is replaced by *main* so we will rename it
+to rename we do "git branch -M main" (m stands for move)
+now we can push the code by git push origin main
+we can also do "git push -u origin main"
+(u stands for upstream)this means to set main branch as the default so that
+ another time we can directly write git push and it will push it to the 
+ upstream branch i.e-default branch(here main)
+
+to make a new branch we do "git branch (name of the branch)"
+
+
+
+-->
+
+
+
 
 
